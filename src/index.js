@@ -1,20 +1,39 @@
 class Character {
-    constructor(name, type) {
-      this.name = name;
-      this.type = type;
-      this.attact;
-      this.defence;
-        if (type === 'Bowman' || type === 'Undead') {
-      this.attack = 25;
-      this.defence = 25;
-    } else if (type === 'Swordsman' || type === 'Zombie') {
-       this.attack = 40;
-       this.defence = 10;
-    } else if (type === 'Magician' || type === 'Daemon') {
-      this.attack = 10;
-      this.defence = 40;
-    }
-    }
-  }
+  constructor(name) {
+    this.name = name;
+    this.level = 1;
+    this.health = 100;
+}
+}
 
-  export { Character }
+class Bowman extends Character {
+  attack = 25;
+  defence = 25
+};
+
+class Swordsman extends Character {
+  attack = 40;
+  defence = 10;
+}
+
+class Undead extends Character {
+  attack = 25;
+  defence = 25;
+}
+
+class Zombie extends Character {
+  attack = 40;
+  defence = 10;
+}
+
+class Magician extends Character {
+  attack = 10;
+  defence = 40;
+}
+
+class Daemon extends Character {
+  attack = 10;
+  defence = 40;
+}
+
+  export { Character, Bowman, Swordsman, Undead, Zombie, Magician, Daemon }
