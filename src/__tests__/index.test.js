@@ -1,4 +1,9 @@
-import { Character, Bowman, Swordsman, Undead, Zombie, Magician, Daemon } from '../index'
+import { Bowman } from '../bowman';
+import { Swordsman } from '../swordsman';
+import { Undead } from '../undead';
+import { Zombie } from '../zombie';
+import { Magician } from '../magician';
+import { Daemon } from '../daemon'
 
 const v1 = new Bowman('Арбалетчик');
 test('First', () => {
