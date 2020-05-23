@@ -1,8 +1,11 @@
 import { Character } from './index'
 
 class Magician extends Character {
-    attack = 10;
-    defence = 40;
+  constructor(name) {
+    super(name);
+    this.attack = 10;
+    this.defence = 40;
   }
+}
 
   export { Magician }

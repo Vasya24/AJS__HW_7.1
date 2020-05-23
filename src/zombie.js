@@ -1,8 +1,11 @@
 import { Character } from './index'
 
 class Zombie extends Character {
-    attack = 40;
-    defence = 10;
+  constructor(name) {
+    super(name);
+    this.attack = 40;
+    this.defence = 10;
   }
+}
 
   export { Zombie }
